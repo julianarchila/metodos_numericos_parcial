@@ -17,8 +17,8 @@ la calibración y las figuras se mantienen en ese único notebook.
 
 - Enunciado: `Julian Alejandro Archila Caro - Parcial Calibracion Markov Modulado.pdf`
 - Plan: `plans/plan-parcial-calibracion-markov.md`
-- Taller 2: `../metodos_numericos_taller2/Taller_2_Metodos.ipynb`
-- Taller 3/4: `../metodos_numericos_taller3/Taller3.ipynb`
+- Taller 2: `reference/taller2/Taller_2_Metodos.ipynb`
+- Taller 3/4: `reference/taller3/Taller3.ipynb`
 
 ## Convenciones
 

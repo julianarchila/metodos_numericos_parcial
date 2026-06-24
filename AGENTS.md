@@ -41,10 +41,10 @@ Leer antes de implementar:
 2. `plans/plan-parcial-calibracion-markov.md`
    - Contiene las fases, criterios de aceptación y correspondencia con la
      rúbrica.
-3. `../metodos_numericos_taller2/Taller_2_Metodos.ipynb`
+3. `reference/taller2/Taller_2_Metodos.ipynb`
    - Fuente de la función característica, Carr-Madan FFT, COS,
      Black-Scholes y volatilidad implícita.
-4. `../metodos_numericos_taller3/Taller3.ipynb`
+4. `reference/taller3/Taller3.ipynb`
    - Fuente de la EDP acoplada y el esquema Crank-Nicolson.
 
 Los notebooks anteriores son material de referencia: no modificarlos.
@@ -119,4 +119,3 @@ El conjunto filtrado debe incluir, como mínimo:
 Los filtros deben cubrir liquidez, spreads, cotas de no arbitraje y el intervalo
 sugerido \(0.8\le K/S_0\le1.2\). También debe generarse una tabla de conteos por
 vencimiento.
-

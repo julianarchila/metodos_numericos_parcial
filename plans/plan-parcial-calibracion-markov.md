@@ -31,9 +31,9 @@ El resultado debe ser reproducible: la cadena de opciones se congela en un CSV, 
 
 ### Taller 2: Fourier, FFT y COS
 
-- [Notebook principal del Taller 2](../../metodos_numericos_taller2/Taller_2_Metodos.ipynb)
-- [Resultados del Taller 2](../../metodos_numericos_taller2/Resultados.pdf)
-- [Notebook de trabajo del Taller 2](../../metodos_numericos_taller2/wip.ipynb)
+- [Notebook principal del Taller 2](../reference/taller2/Taller_2_Metodos.ipynb)
+- [Resultados del Taller 2](../reference/taller2/Resultados.pdf)
+- [Notebook de trabajo del Taller 2](../reference/taller2/wip.ipynb)
 
 Componentes reutilizables identificados:
 
@@ -50,9 +50,9 @@ La comparación existente entre FFT y COS alcanza diferencias cercanas a
 
 ### Taller 3/4: EDP y Monte Carlo
 
-- [Notebook principal del Taller 3](../../metodos_numericos_taller3/Taller3.ipynb)
-- [Enunciado de diferencias finitas y Monte Carlo](../../metodos_numericos_taller3/Taller%20Diferencias%20Finitas%20y%20Monte%20Carlo.pdf)
-- [Rúbrica del Taller 3](../../metodos_numericos_taller3/Rubrica%20Taller%203.pdf)
+- [Notebook principal del Taller 3](../reference/taller3/Taller3.ipynb)
+- [Enunciado de diferencias finitas y Monte Carlo](../reference/taller3/Taller%20Diferencias%20Finitas%20y%20Monte%20Carlo.pdf)
+- [Rúbrica del Taller 3](../reference/taller3/Rubrica%20Taller%203.pdf)
 
 Componentes reutilizables identificados:
 
