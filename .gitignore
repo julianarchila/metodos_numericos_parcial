@@ -1,0 +1,15 @@
+.venv/
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+
+.DS_Store
+.pytest_cache/
+.coverage
+htmlcov/
+
+tmp/
+output/
+
+# Los snapshots definitivos sí se versionan.
+data/tmp/

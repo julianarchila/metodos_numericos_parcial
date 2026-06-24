@@ -1,0 +1,15 @@
+[project]
+name = "calibracion-markov-modulado"
+version = "0.1.0"
+description = "Parcial de calibración de un modelo Markov-modulado a opciones de SPY"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "ipykernel>=6.29",
+    "jupyterlab>=4.2",
+    "matplotlib>=3.9",
+    "numpy>=2.0",
+    "pandas>=2.2",
+    "scipy>=1.14",
+    "yfinance>=0.2.54",
+]
