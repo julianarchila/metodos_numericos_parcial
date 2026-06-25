@@ -1,0 +1,13 @@
+# Dependencias del proyecto — instalar con: pip install -r requirements.txt
+# Probado con Python 3.12. Entre paréntesis, las versiones de referencia usadas.
+
+numpy>=2.0           # (2.5.0)
+pandas>=2.2          # (3.0.3)
+scipy>=1.14          # (1.18.0)
+matplotlib>=3.9      # (3.11.0)
+yfinance>=0.2.54     # (1.4.1) — sólo para regenerar el snapshot de datos
+
+# Entorno de ejecución del notebook
+jupyterlab>=4.2      # (4.6.0)
+ipykernel>=6.29      # (7.3.0)
+nbconvert>=7.16      # (7.17.1) — ejecutar el notebook de forma no interactiva
