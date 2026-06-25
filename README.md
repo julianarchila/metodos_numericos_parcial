@@ -33,9 +33,9 @@ uv run jupyter nbconvert --to notebook --execute parcial_calibracion_markov.ipyn
   - `data/spy_options_filtered.csv` — conjunto calibrable filtrado.
   - `data/spy_snapshot_meta.json` — fecha/hora UTC, spot, `r`, `q`, fuentes y
     vencimientos del snapshot.
-- **Snapshot incluido:** 2026-06-24, `S₀ = 733.24`, `r = 3.69%` (`^IRX`),
-  `q = 1.27%` (dividendos TTM / spot), 7 vencimientos (~30 a ~360 días),
-  1220 cotizaciones filtradas.
+- **Snapshot incluido:** 2026-06-24, `S₀ = 733.24`, `r = 3.69%` (`^IRX`,
+  usado como proxy plana), `q = 1.27%` (dividendos TTM / spot), 7 vencimientos
+  (~30 a ~360 días), 1217 cotizaciones filtradas.
 - **Regenerar el snapshot (opcional):** poner `FORCE_DOWNLOAD = True` en la celda
   `datos-config` y ejecutar. Los resultados cambiarán según la fecha de descarga;
   para reproducir el informe, usar el CSV congelado entregado.
@@ -47,7 +47,8 @@ uv run jupyter nbconvert --to notebook --execute parcial_calibracion_markov.ipyn
   decisión del parcial de calibrar con `r₀ = r₁ = r`.
 - Forward `F = S₀·e^{(r−q)T}`; precio de mercado `mid = (bid + ask)/2`.
 - Filtros deterministas: `bid/ask` válidos, `mid ≥ 0.05`, spread relativo ≤ 0.5,
-  `open interest ≥ 10`, moneyness `0.8 ≤ K/S₀ ≤ 1.2`, cotas de no arbitraje.
+  `volume ≥ 1`, `open interest ≥ 10`, moneyness `0.8 ≤ K/S₀ ≤ 1.2` y cotas
+  de no arbitraje.
 
 ## Orden de ejecución
 
