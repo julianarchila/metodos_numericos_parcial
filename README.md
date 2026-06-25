@@ -19,7 +19,7 @@ Para una ejecución completa, no interactiva, desde un kernel reiniciado:
 mkdir -p tmp/notebook-smoke
 uv run jupyter nbconvert --to notebook --execute parcial_calibracion_markov.ipynb \
   --output executed.ipynb --output-dir tmp/notebook-smoke \
-  --ExecutePreprocessor.timeout=900
+  --ExecutePreprocessor.timeout=300
 ```
 
 ## Procedencia de los datos
@@ -61,7 +61,7 @@ El notebook se ejecuta **de arriba abajo** desde un kernel reiniciado. Secciones
 4. **Validación cruzada A/B/C** — tabla de diferencias en el caso base.
 5. **Motor de precios y objetivo** — mezcla estacionaria, RMSE en IV, dos ponderaciones.
 6. **Calibración** — brute force, Nelder-Mead y BFGS; tabla comparativa.
-7. **Diagnóstico** — cortes afines, perfiles 1D / Hessiano, recalibración perturbada.
+7. **Diagnóstico** — dos cortes afines y perfiles 1D de identificabilidad.
 8. **Parte D** — sonrisa mercado vs. modelo, Black-Scholes plano, estructura a plazo,
    interpretación económica y respuestas a las seis preguntas.
 
@@ -75,7 +75,6 @@ Todas las salidas regenerables van a `output/` (carpeta no versionada).
 | Tabla de calibración (3 métodos × 2 pesos) | `f6-tabla` | `output/f6_tabla_calibracion.csv` |
 | RMSE vs α (cortes afines) | `f7-fig-segment` | `output/f7_rmse_segmentos.png` |
 | Perfiles 1D alrededor del óptimo | `f7-fig-profiles` | `output/f7_perfiles_1d.png` |
-| Recalibración con precios perturbados | `f7-fig-perturb` | `output/f7_recalibracion_perturbada.png` |
 | Sonrisa IV mercado vs. modelo | `f8-fig-sonrisa` | `output/f8_sonrisa_iv_mercado_vs_modelo.png` |
 | Residuos de IV | `f8-fig-residuos` | `output/f8_residuos_iv.png` |
 | BS plano vs. régimenes | `f8-bs-plano` | `output/f8_comparacion_bs_vs_regimenes.csv` |
@@ -94,9 +93,9 @@ Todas las salidas regenerables van a `output/` (carpeta no versionada).
 ## Tiempos aproximados
 
 - `uv sync`: ~1 min (primera vez).
-- Ejecución completa del notebook: ~5–10 min (la calibración domina; ~82 ms por
-  evaluación del objetivo COS, malla 5×5×4×4 + dos optimizadores locales × dos
-  ponderaciones).
+- Ejecución completa del notebook: varios minutos (la calibración domina; malla
+  5×5×4×4, optimizadores locales para dos ponderaciones y calibraciones por
+  vencimiento).
 
 ## Limitaciones conocidas
 
