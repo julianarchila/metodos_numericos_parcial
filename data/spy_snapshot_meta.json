@@ -1,0 +1,22 @@
+{
+  "ticker": "SPY",
+  "snapshot_utc": "2026-06-24T22:34:53.010637+00:00",
+  "snapshot_date": "2026-06-24",
+  "timezone": "UTC",
+  "spot": 733.239990234375,
+  "r_flat": 0.03690000057220459,
+  "r_source": "^IRX 13-week T-bill, ultimo cierre",
+  "q_flat": 0.012664339266372794,
+  "q_source": "dividendos SPY ultimos 365 dias / spot",
+  "expiries": [
+    "2026-07-24",
+    "2026-08-21",
+    "2026-09-18",
+    "2026-10-16",
+    "2026-12-18",
+    "2027-03-19",
+    "2027-06-17"
+  ],
+  "daycount": 365.0,
+  "source": "yfinance"
+}
