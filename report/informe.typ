@@ -53,11 +53,6 @@
 
 #align(center)[
   #v(0.4em)
-  #text(size: 9.5pt, tracking: 0.5pt)[UNIVERSIDAD NACIONAL DE COLOMBIA]\
-  #text(size: 9pt, fill: rgb(70,70,70))[Departamento de Matemáticas · Métodos Numéricos en Finanzas]
-  #v(1.0em)
-  #line(length: 70%, stroke: 0.6pt)
-  #v(0.6em)
   #text(size: 17pt, weight: "bold")[Informe del parcial]\
   #v(0.2em)
   #text(size: 13pt)[Calibración del modelo Markov-modulado a opciones de SPY]
