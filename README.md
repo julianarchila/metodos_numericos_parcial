@@ -82,6 +82,24 @@ Todas las salidas regenerables van a `output/` (carpeta no versionada).
 | Estabilidad a plazo | `f8-fig-plazo` | `output/f8_estabilidad_plazo.png` |
 | Interpretación económica | `f8-economia` | `output/f8_interpretacion_economica.csv` |
 
+## Informe (PDF)
+
+El informe del parcial (máx. 12 páginas) está en `report/`:
+
+- `report/informe.typ` — fuente [Typst](https://typst.app/) del informe.
+- `report/Informe_Parcial_Calibracion_Markov.pdf` — PDF compilado (entregable).
+
+El informe incrusta las figuras de `output/`, así que el PDF es autocontenido.
+Para recompilarlo (tras regenerar `output/` ejecutando el notebook):
+
+```bash
+# Requiere typst (https://github.com/typst/typst/releases)
+typst compile --root . report/informe.typ report/Informe_Parcial_Calibracion_Markov.pdf
+```
+
+El flag `--root .` permite que el `.typ` lea las imágenes con rutas `/output/...`
+relativas a la raíz del repositorio.
+
 ## Reproducibilidad
 
 - **Semilla global** `SEED = 42` (fijada en la celda de configuración y re-fijada
